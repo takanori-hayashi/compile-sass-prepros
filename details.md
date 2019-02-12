@@ -15,7 +15,7 @@ osに応じてインストーラーをダウンロードしてインストール
 PreprosのGUIからcssファイルを出力するディレクトリを指定
 
 1. projectsを選択し、settingをクリック
-2. Compiler SettingsのSassの最下部RReplace Segments Withにcssを出力したいディレクトリを入力
+2. Compiler SettingsのSassの最下部Replace Segments Withにcssを出力したいディレクトリを入力
     - プロジェクト毎に同じであれば固定してしまってもよい
-    - 当リポジトリではdist/assets/cssとしています
+    - 当リポジトリでは例としてdist/assets/cssとしています
     - 指定した最上層のディレクトリが存在してないと出力されないので注意
