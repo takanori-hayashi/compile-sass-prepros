@@ -26,8 +26,6 @@ Prepros内での表示に関わる箇所なので任意で設定してくださ�
 project > setting > Compiler SettingsのSassの最下部Replace Segments Withにcssを出力したいディレクトリを入力
 - プロジェクト毎に同じであれば固定してしまってもよい
 
----
-
 ## cssのアウトプット設定について
 ### ベンダープレフィックス自動付与
 autoprefixerの機能を使用してベンダープレフィックス自動付与します。  
