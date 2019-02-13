@@ -41,6 +41,8 @@ Preprosでファイルの更新を検知して自動でコンパイルが走り�
 
 - scss記法を使うので拡張子は.scssとしてください。
 - cssの直接編集は行わず、変更する際はscssファイルを編集する
+- sassの基本的な機能は下記urlを確認してください
+    - https://gist.github.com/takanori-hayashi/9cd901edf7a840011ba9fb4c1c2d8c76
 
 # その他
 Preprosにはsassのコンパイル以外にも多くの機能がありますが、今回はsassのコンパイルのみに使用します。
