@@ -3,28 +3,31 @@
 
 osに応じてインストーラーをダウンロードしてインストール
 
-# 2. ワークスペースをPreprosに登録
+# 2. ワークスペース作成
 1. githubから当リポジトリをダウンロード
-2. 任意に作成したワークスペースの直下にsassディレクトリと、prepros-6.configを配置
-    - prepros-6.configを使用することでプロジェクト毎に同じpreprosの設定を適用します。設定内容は後術
+2. 作成したワークスペースの直下にprepros-6.configを配置
+    - prepros-6.configを使用することでプロジェクト毎に同じpreprosの設定を適用します。
     - prepros-6.configは設定ファイルなのでバージョン管理からは除外してください
-3. prepros-6.config最上部の `"name": "your project name",` を任意の名前に変更
-4. Preprosを起動し、ワークスペースのディレクトリをPreprosにドラッグ&ドロップして登録
-    - 有料ライセンスのポップアップが出ますが無視して無料使用できます。
 
-# 3. cssのアウトプット設定
-PreprosのGUIからcssファイルを出力するディレクトリを指定
+# 3. Prepros設定
+PreprosのGUIから設定を行う
+設定はproject > settingから行えます
 
-1. projectsを選択し、settingをクリック
-2. Compiler SettingsのSassの最下部Replace Segments Withにcssを出力したいディレクトリを入力
-    - プロジェクト毎に同じであれば固定してしまってもよい
-    - 当リポジトリでは例としてdist/assets/cssとしています
-    - 指定した最上層のディレクトリが存在してないと出力されないので注意
-3. sassディレクトリ内にscssファイルを配置
-    - Preprosがscssファイルを監視しているので自動でコンパイルが走ります
-    - scss記法を使用するので、拡張子は.scssとしてください
+## プロジェクト登録
+Preprosを起動し、ワークスペースのディレクトリをPreprosにドラッグ&ドロップして登録  
+有料ライセンスのポップアップが出ますが無視して無料使用できます。
 
-## cssのアウトプット設定
+## プロジェクト名変更（任意）
+project > setting > General > Project Nameからプロジェクト名変更を行います。
+Prepros内での表示に関わる箇所なので任意で設定してください。
+
+## cssの出力先指定
+project > setting > Compiler SettingsのSassの最下部Replace Segments Withにcssを出力したいディレクトリを入力
+- プロジェクト毎に同じであれば固定してしまってもよい
+
+---
+
+## cssのアウトプット設定について
 ### ベンダープレフィックス自動付与
 autoprefixerの機能を使用してベンダープレフィックス自動付与します。  
 そのためscssファイルにはベンダープレフィックスの記述は不要  
@@ -32,6 +35,12 @@ autoprefixerの機能を使用してベンダープレフィックス自動付�
 
 ### cs minify
 cssは圧縮して出力します。cssファイルの直接編集することは行わずscssファイルを編集してください。
+
+# コーディング作業
+sassディレクトリ内にscssファイルを配置し、コーディングを行う。Preprosでファイルの更新を検知して自動でコンパイルが走ります。
+
+- scss記法を使うので拡張子は.scssとしてください。
+- cssの直接編集は行わず、変更する際はscssファイルを編集する
 
 # その他
 Preprosにはsassのコンパイル以外にも多くの機能がありますが、今回はsassのコンパイルのみに使用します。
