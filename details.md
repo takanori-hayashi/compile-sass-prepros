@@ -72,3 +72,7 @@ Autoprefixerのみ設定します。
 - Browser Sync
 - Live Reload
 - FTP Setting
+
+# プロジェクトの追加
+ルートディレクトリをPreprosにドラッグ&ドロップしてプロジェクトを追加する
+あとはファイル更新するとコンパイルが走ります。
